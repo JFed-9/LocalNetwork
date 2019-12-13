@@ -30,10 +30,6 @@ app.get('/', function (req, res){
 	res.redirect('/index');
 })
 
-app.get('/files', function(req, res) {
- res.redirect('192.168.1.144:8088');
-});
-
 app.get('/favicon.ico', function(req, res) {
     res.redirect('/assets/favicon.ico');
 });
