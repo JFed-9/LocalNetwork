@@ -21,8 +21,11 @@ server.listen(PORT, function (){
 	console.log('Server started on port ' + PORT)
 })
 
-app.get('/', function (req, res){
+app.get('/index', function(req, res){
 	res.render('index');
+})
+app.get('/', function (req, res){
+	res.redirect('/index');
 })
 
 app.get('/favicon.ico', function(req, res) {
