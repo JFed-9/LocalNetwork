@@ -2,6 +2,7 @@
 const express = require('express');
 const http = require('http');
 const Q = require('q');
+const engine = require('ejs-locals');
 
 const PORT = 1337; //the port the http server will listen on
 var connectionsArray = []; //used to track clients that connect to the web socket server
